@@ -1,0 +1,68 @@
+body {
+    margin: 0px;
+    font-family: cairoRegular;
+    font-size: 14pt;
+
+    background-color: #3700FF;
+    background-image: url(../imgs/assets/dot.png);
+    background-repeat: repeat;
+
+    color: white;
+
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px;
+    height: fit-content;
+}
+
+.logo {
+    display: block;
+    width: 140px;
+
+    margin: auto;
+
+    color: white;
+}
+
+h2 {
+    line-height: 1.4;
+    font-size: 80px;
+}
+
+main-container {
+    position: relative;
+    height: max-content;
+    width: 100vw;
+}
+
+socials {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    fill: white;
+}
+
+footer {
+    height: auto;
+    width: 100%;
+
+    position: relative;
+    bottom: 0%;
+}
+
+footer p {
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+}

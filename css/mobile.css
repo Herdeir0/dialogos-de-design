@@ -1,0 +1,38 @@
+/* mobile.css */
+
+/* Reset default styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Add mobile-specific styles here */
+@media  (min-width: 761px) {
+    #lu-frame-dektop {
+        display: block;
+    }
+    #lu-frame-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 760px) {
+    .main-container {
+        max-width: 90%;
+    }
+    
+    .footer {
+        height: 20px;
+    }
+    
+    #lu-frame-desktop {
+        display: none;
+    }
+
+    #lu-frame-mobile {
+        display: block;
+    }
+    /* Styles for screens smaller than 480px */
+}
+
+/* Add any other mobile-specific styles as needed */
