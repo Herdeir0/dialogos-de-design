@@ -3,26 +3,32 @@ body {
     font-family: cairoRegular;
     font-size: 14pt;
 
-    background-color: #3700FF;
+    background-color: #3131FF;
     background-image: url(../imgs/assets/dot.png);
     background-repeat: repeat;
 
     color: white;
 
-    height: 100vh;
+    min-height: 100vh;
 
-    display: flex;
+    display: grid;
 
     justify-content: space-between;
     flex-direction: column;
+
+grid-template-columns: repeat(12, 1fr);
+
+row-gap: 50px;
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 32px;
+    padding: 24px 32px 0px;
     height: fit-content;
+
+    grid-column: span 12;
 }
 
 .logo {
@@ -42,7 +48,8 @@ h2 {
 main-container {
     position: relative;
     height: max-content;
-    width: 100vw;
+    grid-column-start: 3;
+    grid-column-end: 11;
 }
 
 socials {
@@ -59,10 +66,12 @@ footer {
 
     position: relative;
     bottom: 0%;
+
+    grid-column: span 12;
 }
 
 footer p {
     padding: 0px;
-    width: 100%;
+    grid-column: span 12;
     text-align: center;
 }
