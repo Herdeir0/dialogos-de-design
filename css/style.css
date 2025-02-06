@@ -16,7 +16,7 @@ body {
     justify-content: space-between;
     flex-direction: column;
 
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8%;
 
     row-gap: 50px;
 }
