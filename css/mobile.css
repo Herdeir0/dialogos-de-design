@@ -4,7 +4,8 @@
 
 @media (max-width: 760px) {
     body {
-        row-gap: 20px;
+        row-gap: 80px;
+        min-height: 0px;
     }
 
     main-container {
