@@ -7,3 +7,23 @@
     font-family: cairoBold;
     src: url('../type/Cairo-Bold.ttf');
 }
+
+@font-face {
+    font-family: chivoRegular;
+    src: url('../type/Chivo-Regular.ttf');
+}
+
+@font-face {
+    font-family: chivoBold;
+    src: url('../type/Chivo-Bold.ttf');
+}
+
+@font-face {
+    font-family: chivoItalic;
+    src: url('../type/Chivo-Italic.ttf');
+}
+
+@font-face {
+    font-family: chivoBoldItalic;
+    src: url('../type/Chivo-BoldItalic.ttf');
+}
