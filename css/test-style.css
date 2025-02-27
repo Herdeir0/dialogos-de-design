@@ -55,12 +55,15 @@ a:hover {
     color: var(--highlight-text-color);
 }
 
-a:active {
+.active {
     /*box-shadow: inset 0 24px 0 var(--highlight-color);*/
 
     /*text-decoration-thickness: 2px;
     background-color: var(--highlight-color);
     color: var(--highlight-text-color);*/
+
+    box-shadow: inset 0 -24px 0 var(--highlight-color);
+    color: var(--highlight-text-color);
 }
 
 .highlight {
@@ -159,7 +162,7 @@ main-container {
 
     display: grid;
     grid-template-columns: repeat(12);
-    row-gap: 48px;
+    row-gap: 24px;
 
     height: max-content;
     width: 100%;
@@ -180,6 +183,16 @@ main-container h1 {
 main-container h2 {
     grid-column: span 12;
 
+    font-size: 60px;
+    line-height: 110%;
+
+    margin: 0px;
+    padding: 0px 0px;
+}
+
+main-container h3 {
+    grid-column: span 12;
+
     font-size: 36px;
     line-height: 110%;
 
@@ -196,7 +209,7 @@ main-container p {
 iframe {
     display: flex;
     
-    grid-column: span 12;
+    grid-template-columns: span 12;
     width: 100%;
 
     height: 100vh;
@@ -207,6 +220,20 @@ iframe {
     border-radius: 24px;
 }
 
+.partner-image {
+    display: block;
+    grid-column: span 3;
+
+    max-height: 150px;
+    max-width: 200px;
+
+    margin: auto;
+
+    text-wrap: initial;
+
+    padding: 24px 24px;
+}
+
 /* ---------------------------------------------------------------------------------------- Footer --- */
 
 footer {
@@ -214,15 +241,18 @@ footer {
     width: 100%;
 
     position: relative;
+    display: flex;
     bottom: 0%;
+
+    justify-content: center;
+    flex-direction: column;
 
     grid-column: span 12;
 }
 
 footer p {
     padding: 0px;
-    grid-column: span 12;
-    text-align: center;
+    justify-content: center;
 }
 
 socials {
