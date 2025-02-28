@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Diálogos de Design</title>
     <link rel="stylesheet" href="css/test-style.css">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/test-mobile.css">
     <link rel="stylesheet" href="css/type.css">
     <link rel="icon" href="imgs/favicon.png">
+    <script src="scripts/menu-script.js"></script>
 </head>
 
 <body>
@@ -19,11 +20,25 @@
             </a>
         </logotype>
         <menu>
-            <a>Eventos</a>
+            <a href="eventos.html">Eventos</a>
             <a class="active">Comunidade</a>
             <a href="manifesto.html">Manifesto</a>
         </menu>
+
+        <button id="toggleButton" onclick="toggleDisplay()">
+            <div style="margin: auto">
+                <span id="line1" class="menuLine1" style="rotate: 0deg; margin-bottom: 10px"></span>
+                <span id="line3" class="menuLine3" style="rotate: 0deg"></span>
+            </div>
+        </button>
     </navbar>
+
+    <div id="menu" style="top: -100%; max-width: 0vw">
+        <a href="eventos.html" style="width: fit-content;">Eventos</a>
+        <a href="comunidade.html"
+            style="width: fit-content; box-shadow: inset 0 -56px 0 var(--highlight-color); color: var(--highlight-text-color);">Comunidade</a>
+        <a href=" manifesto.html" style="width: fit-content;">Manifesto</a>
+    </div>
 
     <main-container>
         <h1>
@@ -40,8 +55,85 @@
             <br>
             Para proteger a privacidade dos membros, o grupo é privado e só podes entrar através de convite. Envia-nos
             uma mensagem no <a href="https://www.instagram.com/dialogos.de.design/" target="_blank">Instagram</a> com o
-            teu pedido e nós trataremos de te adicionar!
+            teu pedido e nós trataremos de te adicionar!<br>
+            <br>
+            Alguns dos canais do grupo incluem:<br>
         </p>
+        <manifesto-container style="grid-column-start: 1; grid-column-end: 9;">
+            <h3>
+                👩‍💻 Exposição / Recrutamento
+            </h3>
+            <p>
+                <br>
+                Estás à procura de uma nova aventura profissional? Envia o teu portefólio e uma breve descrição sobre
+                ti, e se algum dos membros estiver à procura de alguém com o teu perfil, poderá entrar em contacto
+                contigo!<br>
+                <br>
+                Se trabalhares numa empresa que está à procura de novos talentos, também podes partilhar a vaga neste
+                grupo.
+            </p>
+            <div class="tl"></div>
+            <div class="tm"></div>
+            <div class="tr"></div>
+            <div class="ml"></div>
+            <div class="mr"></div>
+            <div class="bl"></div>
+            <div class="bm"></div>
+            <div class="br"></div>
+        </manifesto-container>
+        <manifesto-container style="grid-column-start: 4; grid-column-end: 13;">
+            <h3>
+                ❓ Ajudas e Dicas
+            </h3>
+            <p>
+                <br>
+                Não sabes como resolver um problema no teu projeto? Precisas de ajuda com um software específico ou
+                apenas uma opinião sobre o teu trabalho? Este é o canal ideal para ti!<br>
+                <br>
+                Também é perfeito para partilhares truques e referências que possam ajudar outros designers.
+            </p>
+            <div class="tl"></div>
+            <div class="tm"></div>
+            <div class="tr"></div>
+            <div class="ml"></div>
+            <div class="mr"></div>
+            <div class="bl"></div>
+            <div class="bm"></div>
+            <div class="br"></div>
+        </manifesto-container>
+        <manifesto-container style="grid-column-start: 3; grid-column-end: 12;">
+            <h3>
+                👀 Memes<br>
+                <br>
+            </h3>
+            <img src="imgs/meme.jpg" style="display: block; grid-column: span 12; width: 100%;margin: auto;">
+            <div class="tl"></div>
+            <div class="tm"></div>
+            <div class="tr"></div>
+            <div class="ml"></div>
+            <div class="mr"></div>
+            <div class="bl"></div>
+            <div class="bm"></div>
+            <div class="br"></div>
+        </manifesto-container>
+        <manifesto-container style="grid-column-start: 1; grid-column-end: 9;">
+            <h3>
+                🕺 Convívio
+            </h3>
+            <p>
+                <br>
+                Marcar um café? Noite de jogos de tabuleiro? Perguntar se mais alguém vai a um evento de design? Tudo
+                isto são coisas que podes fazer neste canal!
+            </p>
+            <div class="tl"></div>
+            <div class="tm"></div>
+            <div class="tr"></div>
+            <div class="ml"></div>
+            <div class="mr"></div>
+            <div class="bl"></div>
+            <div class="bm"></div>
+            <div class="br"></div>
+        </manifesto-container>
     </main-container>
 
     <footer>

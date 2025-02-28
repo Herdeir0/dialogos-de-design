@@ -10,6 +10,14 @@
 
 /* ---------------------------------------------------------------------------------------- Global --- */
 
+.show-desktop {
+    display: block !important;
+}
+
+.show-mobile {
+    display: none !important;
+}
+
 * {
     box-sizing: border-box;
     padding: 0px;
@@ -102,7 +110,8 @@ p {
 
 a.notification {
     position: relative;
-    width: max-content;
+    width: 100%;
+    max-width: max-content;
     height: max-content;
     grid-column: span 12;
 
@@ -173,18 +182,91 @@ menu {
     gap: 16px;
 }
 
+#menu {
+    position: absolute;
+    transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 100%;
+    height: auto;
+    padding: 0em 0em 0em 0em;
+  
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    font-size: 48px;
+
+
+    z-index: 3;
+  
+    background-color: var(--primary-color);
+    background-color: var(--primary-color);
+    background-image: url(../imgs/assets/dot.png);
+    background-repeat: repeat;
+  
+    box-sizing: border-box;
+
+    color: var(--highlight-text-color);
+  }
+  
+  #toggleButton {
+    position: relative;
+  
+    background-color: rgba(0, 0, 0, 0);
+  
+    height: 30px;
+    width: 30px;
+  
+    border: none;
+    text-align: right;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 16px;
+    cursor: pointer;
+  
+    padding: 0px;
+  
+    z-index: 4;
+  
+    transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-property: top;
+  }
+  
+  .menuLine1 {
+    rotate: 0deg;
+    width: 30px;
+    margin-bottom: 5px;
+    display: block;
+    border-bottom: 3px solid var(--text-color);
+    transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-property: rotate, margin-bottom;
+    transform-origin: 0% 50%;
+  }
+  
+  .menuLine3 {
+    rotate: -0deg;
+    width: 30px;
+    margin-bottom: 0px;
+    display: block;
+    border-bottom: 3px solid var(--text-color);
+    transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-property: rotate;
+    transform-origin: 0% 50%;
+  }
+
 /* ---------------------------------------------------------------------------------------- Content --- */
 
 main-container {
     position: relative;
 
     display: grid;
-    grid-template-columns: 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% ;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
     row-gap: 24px;
 
     height: max-content;
     width: 100%;
-    max-width: 1024px;
+    max-width: 1440px;
     margin: 48px auto;
     padding: 0px 32px;
 }
@@ -197,6 +279,8 @@ main-container h1 {
 
     margin: 0px;
     padding: 0px 0px;
+
+    text-wrap: balance;
 }
 
 main-container h2 {
@@ -225,10 +309,16 @@ main-container p {
     line-height: 160%;
 }
 
+ul {
+    font-size: 24px;
+    grid-column: span 12;
+    list-style-type: circle;
+}
+
 iframe {
     display: flex;
     
-    grid-template-columns: span 12;
+    grid-column: span 12;
     width: 100%;
 
     height: 100vh;
@@ -236,7 +326,7 @@ iframe {
     
     margin: 0px auto;
     
-    border-radius: 24px;
+    border-radius: 0px;
 }
 
 .partner-image {

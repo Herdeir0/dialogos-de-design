@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Diálogos de Design</title>
     <link rel="stylesheet" href="css/test-style.css">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/test-mobile.css">
     <link rel="stylesheet" href="css/type.css">
     <link rel="icon" href="imgs/favicon.png">
+    <script src="scripts/menu-script.js"></script>
 </head>
 
 <body>
@@ -19,11 +20,25 @@
             </a>
         </logotype>
         <menu>
-            <a>Eventos</a>
+            <a href="eventos.html">Eventos</a>
             <a href="comunidade.html">Comunidade</a>
             <a class="active">Manifesto</a>
         </menu>
+
+        <button id="toggleButton" onclick="toggleDisplay()">
+            <div style="margin: auto">
+                <span id="line1" class="menuLine1" style="rotate: 0deg; margin-bottom: 10px"></span>
+                <span id="line3" class="menuLine3" style="rotate: 0deg"></span>
+            </div>
+        </button>
     </navbar>
+
+    <div id="menu" style="top: -100%; max-width: 0vw">
+        <a href="eventos.html" style="width: fit-content;">Eventos</a>
+        <a href="comunidade.html" style="width: fit-content;">Comunidade</a>
+        <a href="manifesto.html"
+            style="width: fit-content; box-shadow: inset 0 -56px 0 var(--highlight-color); color: var(--highlight-text-color);">Manifesto</a>
+    </div>
 
     <main-container>
         <h1>
