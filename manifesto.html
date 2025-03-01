@@ -25,7 +25,7 @@
             <a class="active">Manifesto</a>
         </menu>
 
-        <button id="toggleButton" onclick="toggleDisplay()" class="show-mobile">
+        <button id="toggleButton" onclick="toggleDisplay()" class="show-mobilebox">
             <div style="margin: auto">
                 <span id="line1" class="menuLine1" style="rotate: 0deg; margin-bottom: 10px"></span>
                 <span id="line3" class="menuLine3" style="rotate: 0deg"></span>
@@ -33,11 +33,15 @@
         </button>
     </navbar>
 
-    <div id="menu" style="top: -100%; max-width: 0vw">
+    <div id="menu" style="display: none;">
         <a href="eventos.html" style="width: fit-content;">Eventos</a>
         <a href="comunidade.html" style="width: fit-content;">Comunidade</a>
-        <a href="manifesto.html"
-            style="width: fit-content; box-shadow: inset 0 -56px 0 var(--highlight-color); color: var(--highlight-text-color);">Manifesto</a>
+        <a href="manifesto.html" style="width: fit-content;">Manifesto</a>
+
+        <footer style="position: absolute; bottom: 0px; justify-content: left;">
+            <a href="mailto:dialogosdedesign@gmail.com" style="font-size: 16px;">dialogosdedesign@gmail.com</a>
+            <p style="color: var(--text-color);">Diálogos de Design 2025 ©</p>
+        </footer>
     </div>
 
     <main-container>
@@ -46,7 +50,7 @@
         </h1>
     </main-container>
     <main-container>
-        <manifesto-container style="grid-column-start: 1; grid-column-end: 10;">
+        <box style="grid-column-start: 1; grid-column-end: 10;">
             <h3>
                 Oferecer um espaço onde a conversa flua de forma natural e regular
             </h3>
@@ -63,9 +67,9 @@
             <div class="bl"></div>
             <div class="bm"></div>
             <div class="br"></div>
-        </manifesto-container>
+        </box>
 
-        <manifesto-container style=" grid-column-start: 4; grid-column-end: 13;">
+        <box style=" grid-column-start: 4; grid-column-end: 13;">
             <h3>
                 Criar uma comunidade local permanentemente conectada
             </h3>
@@ -82,9 +86,9 @@
             <div class="bl"></div>
             <div class="bm"></div>
             <div class="br"></div>
-        </manifesto-container>
+        </box>
 
-        <manifesto-container style=" grid-column-start: 2; grid-column-end: 11;">
+        <box style=" grid-column-start: 2; grid-column-end: 11;">
             <h3>
                 Dar palco ao talento local
             </h3>
@@ -101,7 +105,7 @@
             <div class="bl"></div>
             <div class="bm"></div>
             <div class="br"></div>
-        </manifesto-container>
+        </box>
     </main-container>
     <main-container>
         <h3>
