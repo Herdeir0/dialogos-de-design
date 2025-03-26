@@ -1,10 +1,10 @@
 /* ---------------------------------------------------------------------------------------- Variables --- */
 
 :root {
-    --primary-color: #3131FF;
-    --text-color: #ffffff;
-    --highlight-color: #00F9BB;
-    --highlight-text-color: #000000;
+    --primary-color: #99D500;
+    --text-color: #000;
+    --highlight-color: #020CFF;
+    --highlight-text-color: #fff;
     --font-family: cairoRegular;
 }
 
@@ -166,7 +166,7 @@ logotype {
     display: block;
     width: 140px;
 
-    color: var(--text-color);
+    filter: invert(1);
 }
 
 logotype a {
@@ -347,6 +347,8 @@ iframe {
     text-wrap: initial;
 
     padding: 24px 24px;
+
+    filter: invert(1);
 }
 
 box {
@@ -510,6 +512,8 @@ socials {
     gap: 20px;
     fill: var(--text-color);
     grid-column: span 2;
+
+    filter: invert(1);
 }
 
 socials a {
