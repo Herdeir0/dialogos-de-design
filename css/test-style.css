@@ -1,9 +1,9 @@
 /* ---------------------------------------------------------------------------------------- Variables --- */
 
 :root {
-    --primary-color: #99D500;
-    --text-color: #000;
-    --highlight-color: #020CFF;
+    --primary-color: #16C8AA;
+    --text-color: #fff;
+    --highlight-color: #3a44f6;
     --highlight-text-color: #fff;
     --font-family: cairoRegular;
 }
@@ -166,7 +166,7 @@ logotype {
     display: block;
     width: 140px;
 
-    filter: invert(1);
+    filter: invert(0);
 }
 
 logotype a {
@@ -348,7 +348,7 @@ iframe {
 
     padding: 24px 24px;
 
-    filter: invert(1);
+    filter: invert(0);
 }
 
 box {
@@ -513,7 +513,7 @@ socials {
     fill: var(--text-color);
     grid-column: span 2;
 
-    filter: invert(1);
+    filter: invert(0);
 }
 
 socials a {
