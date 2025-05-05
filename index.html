@@ -3,25 +3,101 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Diálogos de Design</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/type.css">
     <link rel="icon" href="imgs/favicon.png">
+    <script src="scripts/menu-script.js"></script>
 </head>
 
 <body>
-    <div class="nav">
-        <a class="logo" href="index.html">
-            <img src="imgs/logotipo-dialogosdedesign.svg">
-        </a>
+    <navbar>
+        <logotype>
+            <a href="index.html">
+                <img src="imgs/logotipo-dialogosdedesign.svg">
+            </a>
+        </logotype>
+        <menu class="show-desktop">
+            <a href="eventos.html">Eventos</a>
+            <a href="comunidade.html">Comunidade</a>
+            <a href="manifesto.html">Manifesto</a>
+        </menu>
+
+        <button id="toggleButton" onclick="toggleDisplay()" class="show-mobile">
+            <div style="margin: auto">
+                <span id="line1" class="menuLine1" style="rotate: 0deg; margin-bottom: 10px"></span>
+                <span id="line3" class="menuLine3" style="rotate: 0deg"></span>
+            </div>
+        </button>
+    </navbar>
+
+    <div id="menu" style="display: none;">
+        <a href="eventos.html" style="width: fit-content;">Eventos</a>
+        <a href="comunidade.html" style="width: fit-content;">Comunidade</a>
+        <a href="manifesto.html" style="width: fit-content;">Manifesto</a>
+
+        <footer style="position: absolute; bottom: 0px; justify-content: left;">
+            <a href="mailto:dialogosdedesign@gmail.com" style="font-size: 16px;">dialogosdedesign@gmail.com</a>
+            <p style="color: var(--text-color);">Diálogos de Design 2025 ©</p>
+        </footer>
     </div>
 
     <main-container>
-        <h2>Já estamos a preparar a próxima edição! 😉</h2>
+        <a class="notification" href="https://lu.ma/ytnq5rit" target="_blank">
+            <p>Inscreve-te para a Quinta Edição do Diálogos de Design aqui!</p>
+        </a>
+        <h1>
+            Olá, designer, como estás?
+        </h1>
+    </main-container>
+    <main-container>
+        <h3>
+            Já conheces o Diálogos de Design?
+        </h3>
+        <p>
+            De uma forma simples, o Diálogos de Design é um evento com o objetivo de reunir a comunidade algarvia de
+            designers (e amigos) de forma regular e casual.<br>
+            <br>
+            É um espaço para partilhar ideias e oportunidades, fazer networking e claro, encontrar antigos colegas.
+        </p>
+    </main-container>
+    <main-container>
+        <img src="imgs/main-page-image.png" class="show-desktop"
+            style="display: block; grid-column: span 12; width: 100%;margin: auto;">
+        <img src="imgs/main-page-image-mobile.png" class="show-mobile"
+            style="display: block; grid-column: span 12; width: 100%;margin: auto;">
     </main-container>
 
+    <main-container>
+        <h3>
+            Temos os melhores parceiros 😎
+        </h3>
+        <img class="partner-image" src="imgs/partners/and.svg">
+        <img class="partner-image" src="imgs/partners/ualg-esec.svg">
+        <img class="partner-image" src="imgs/partners/adm.svg">
+        <img class="partner-image" src="imgs/partners/loule-creativo.svg">
+        <img class="partner-image" src="imgs/partners/design-fao.svg">
+        <img class="partner-image" src="imgs/partners/turbine-kreuzberg.svg">
+        <img class="partner-image" src="imgs/partners/flow-productions.svg">
+        <img class="partner-image" src="imgs/partners/cm-loule.svg">
+        <box style="grid-column: span 5;">
+            <p>
+                Queres ver o teu logótipo aqui?<br>
+                <a href="mailto:dialogosdedesign@gmail.com?subject=Vamos%20falar%20sobre%20uma%20possível%20parceria" target="_blank">Vamos falar 📨</a>
+            </p>
+            <div class="tl"></div>
+            <div class="tm"></div>
+            <div class="tr"></div>
+            <div class="ml"></div>
+            <div class="mr"></div>
+            <div class="bl"></div>
+            <div class="bm"></div>
+            <div class="br"></div>
+        </box>
+
+    </main-container>
 
     <footer>
         <socials>
@@ -31,10 +107,11 @@
             <a href="https://www.linkedin.com/company/dialogos-de-design/" target="_blank">
                 <img src="imgs/assets/linkedin.svg" style="filter: invert(1); width: 2em;">
             </a>
-            <a href="https://chat.whatsapp.com/H7byj0ADhovEa4tZFKXllv" target="_blank">
-                <img src="imgs/assets/whatsapp.svg" style="filter: invert(1); width: 2em;">
+            <a href="https://lu.ma/dialogosdedesign" target="_blank">
+                <img src="imgs/assets/luma.svg" style="width: 2em;">
             </a>
         </socials>
+        <a href="mailto:dialogosdedesign@gmail.com">dialogosdedesign@gmail.com</a>
         <p>Diálogos de Design 2025 ©</p>
     </footer>
 

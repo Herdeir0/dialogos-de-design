@@ -1,0 +1,19 @@
+/* mobile.css */
+
+/* Add mobile-specific styles here */
+
+@media (max-width: 760px) {
+    body {
+        row-gap: 80px;
+        min-height: 0px;
+    }
+
+    main-container {
+        grid-column-start: 2;
+        grid-column-end: 12;
+    }
+
+    iframe {
+        max-height: 600px !important;
+    }
+}
