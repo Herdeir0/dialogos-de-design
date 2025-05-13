@@ -310,7 +310,7 @@ hero {
 }
 
 .home {
-    background: linear-gradient(rgba(0, 154, 128, 0.8), rgba(0, 154, 128, 0.8)), url(../imgs/hero-image-home.jpg) ;
+    background: linear-gradient(rgba(0, 154, 128, 0.8), rgba(0, 154, 128, 0.8)), url(../imgs/hero-image-home.webp) ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -324,7 +324,7 @@ hero {
 }
 
 .comunidade {
-    background: linear-gradient(rgba(0, 154, 128, 0.8), rgba(0, 154, 128, 0.8)), url(../imgs/hero-image-comunidade.jpg) ;
+    background: linear-gradient(rgba(0, 154, 128, 0.8), rgba(0, 154, 128, 0.8)), url(../imgs/hero-image-comunidade.webp) ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
