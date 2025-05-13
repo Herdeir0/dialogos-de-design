@@ -151,7 +151,6 @@
 
     .partner-image {
         display: block;
-        grid-column: span 1;
     
         max-height: 150px;
         max-width: 200px;
@@ -161,6 +160,14 @@
         text-wrap: initial;
     
         padding: 24px 24px;
+    }
+
+    .aimg {
+        grid-column: span 1;
+        box-shadow: 0 0px 0 var(--highlight-color);
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
 
     box {
