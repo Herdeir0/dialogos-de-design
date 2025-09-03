@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="O Diálogos de Design é um evento pensado para reunir, de forma descontraída e regular, a comunidade de designers do Algarve — e, claro, todos os amigos que queiram juntar-se.">
+    <link rel="canonical" href="https://dialogosdedesign.com/index.html">
+    <meta name="keywords" content="Diálogos de Design, Designers, Algarve, Comunidade, Eventos, Networking, Design, Criatividade">
+    <meta name="author" content="Diálogos de Design">
+    <title>Diálogos de Design - Comunidade Algarvia de Designers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/laptop.css">
+    <link rel="stylesheet" href="css/type.css">
+    <link rel="icon" href="imgs/favicon.png">
+    <script src="scripts/menu-script.js"></script>
+</head>
+
+<body>
+    <navbar>
+        <logotype>
+            <a href="index.html">
+                <img src="imgs/logotipo-dialogosdedesign.svg" alt="Logótipo Diálogos de Design">
+            </a>
+        </logotype>
+        <menu class="show-desktop">
+            <a href="eventos.html">Eventos</a>
+            <a href="comunidade.html">Comunidade</a>
+            <a class="active">Sobre nós</a>
+        </menu>
+
+        <button id="toggleButton" onclick="toggleDisplay()" class="show-mobile">
+            <div style="margin: auto">
+                <span id="line1" class="menuLine1" style="rotate: 0deg; margin-bottom: 10px"></span>
+                <span id="line3" class="menuLine3" style="rotate: 0deg"></span>
+            </div>
+        </button>
+    </navbar>
+
+    <div id="menu" style="display: none;">
+        <a href="eventos.html" style="width: fit-content;">Eventos</a>
+        <a href="comunidade.html" style="width: fit-content;">Comunidade</a>
+        <a href="sobre.html" style="width: fit-content;">Sobre nós</a>
+        <footer style="position: absolute; bottom: 0px; justify-content: left;">
+            <a href="mailto:dialogosdedesign@gmail.com" style="font-size: 16px;">dialogosdedesign@gmail.com</a>
+            <p style="color: var(--text-color);">Diálogos de Design 2025 ©</p>
+        </footer>
+    </div>
+
+    <!-- <hero class="comunidade">
+        <main-container>
+            <h1>
+                Há mais <span class="highlight">designers</span> no Algarve!
+            </h1>
+        </main-container>
+    </hero> -->
+    <main-container>
+        <h3>
+            Mas afinal, o que é <i>um</i> Diálogos de Design?
+        </h3>
+        <p>
+            O Diálogos de Design é uma série de eventos, criada em 2024, pensada para reunir, de forma descontraída e regular, a comunidade de designers do Algarve — e, claro, todos os amigos que queiram juntar-se.<br>
+            <br>
+            A sua equipa organizadora é composta por designers de várias áreas, e denota-se pelo seu espírito colaborativo e inclusivo, funcionando de forma horizontal e independente.<br>
+            <br>
+            Legalmente, caracteriza-se como uma Iniciativa de Interesse Público, sem fins lucrativos, sendo toda a sua equipa voluntária e sem qualquer tipo de remuneração. O seu objetivo é promover o design e a criatividade, bem como fomentar o networking entre designers e outros profissionais criativos. <br>
+        </p>
+        </main-container>
+        
+
+    <footer>
+        <socials>
+            <a href="https://www.instagram.com/dialogos.de.design/" target="_blank">
+                <img src="imgs/assets/instagram.svg" style="filter: invert(1); width: 2em;" alt="Logótipo do Instagram">
+            </a>
+            <a href="https://www.linkedin.com/company/dialogos-de-design/" target="_blank">
+                <img src="imgs/assets/linkedin.svg" style="filter: invert(1); width: 2em;" alt="Logótipo do LinkedIn">
+            </a>
+            <a href="https://lu.ma/dialogosdedesign" target="_blank">
+                <img src="imgs/assets/luma.svg" style="width: 2em;" alt="Logótipo do Luma">
+            </a>
+        </socials>
+        <a href="mailto:dialogosdedesign@gmail.com">dialogosdedesign@gmail.com</a>
+        <p>Diálogos de Design 2025 ©</p>
+    </footer>
+
+</body>
+
+</html>
